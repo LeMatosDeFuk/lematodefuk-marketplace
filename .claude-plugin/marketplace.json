@@ -1,0 +1,23 @@
+{
+  "name": "lematodefuk-marketplace",
+  "owner": {
+    "name": "LeMatosDeFuk",
+    "email": ""
+  },
+  "metadata": {
+    "description": "Claude Code skills for document processing and productivity",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "google-docs",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/LeMatosDeFuk/claude-skill-google-docs.git"
+      },
+      "description": "Read and extract content from Google Docs including text and images. Supports section extraction with image analysis.",
+      "version": "1.0.0",
+      "strict": true
+    }
+  ]
+}
