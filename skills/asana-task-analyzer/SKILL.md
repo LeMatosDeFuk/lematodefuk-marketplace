@@ -1,5 +1,5 @@
 ---
-name: asana-task-analyzer
+name: ant:asana-task-analyzer
 description: Analyze Asana task requirements for implementers. Use when user provides an Asana task URL and wants to understand what needs to be done. Extracts task details, comments, and attachments to provide clear implementation guidance.
 ---
 
