@@ -47,7 +47,7 @@
 
 ## Made with <img src="heart.svg" height="18" alt="love"> by (ant)
 
-> Z (WTF) nápadů rodíme (WOW) výsledky.
+*Z (WTF) nápadů rodíme (WOW) výsledky.*
 
 Jsme full-service digitální agentura ze západu Čech. Už více než 25 let tvoříme projekty, které posouvají hranice. Máme přes 50 expertů a jedno know-how: **dělat věci jinak**.
 
