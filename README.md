@@ -23,9 +23,9 @@ Claude Code skills marketplace with auto-update support.
 After adding the marketplace:
 
 ```bash
-/install google-docs
-/install asana-task-analyzer
-/install handle-mr-feedback
+/plugin install google-docs@lematodefuk-marketplace
+/plugin install asana-task-analyzer@lematodefuk-marketplace
+/plugin install handle-mr-feedback@lematodefuk-marketplace
 ```
 
 ## View Installed Skills
