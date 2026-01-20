@@ -1,6 +1,6 @@
-# LeMatosDeFuk Marketplace
+# Ant Marketplace
 
-Claude Code skills marketplace with auto-update support.
+Ant Studio skills for Claude Code.
 
 ## Installation
 
@@ -8,40 +8,30 @@ Claude Code skills marketplace with auto-update support.
 2. Press **Tab** to switch to **"Marketplaces"** tab
 3. Select **"+ Add Marketplace"**
 4. Enter: `LeMatosDeFuk/lematodefuk-marketplace`
-5. Press Enter to install
+5. Press Enter to add marketplace
+6. Install the plugin:
+
+```bash
+/plugin install ant@ant-marketplace
+```
 
 ## Available Skills
 
-| Skill | Description |
-|-------|-------------|
-| **google-docs** | Read and extract content from Google Docs including text and images |
-| **asana-task-analyzer** | Analyze Asana tasks for implementers - extracts requirements, flags unclear items |
-| **handle-mr-feedback** | Analyze GitLab MR review comments, validate against code, create implementation plan |
+After installing the `ant` plugin, these skills are available:
 
-## Install a Skill
+| Skill | Command | Description |
+|-------|---------|-------------|
+| **google-docs** | `/ant:google-docs` | Read and extract content from Google Docs |
+| **asana-task-analyzer** | `/ant:asana-task-analyzer` | Analyze Asana tasks for implementers |
+| **handle-mr-feedback** | `/ant:handle-mr-feedback` | Handle GitLab MR review feedback |
 
-After adding the marketplace:
-
-```bash
-/plugin install google-docs@lematodefuk-marketplace
-/plugin install asana-task-analyzer@lematodefuk-marketplace
-/plugin install handle-mr-feedback@lematodefuk-marketplace
-```
-
-## Update Skills
-
-Skills auto-update when Claude Code starts, or update manually:
+## Update
 
 ```bash
-/plugin update google-docs
-/plugin update asana-task-analyzer
-/plugin update handle-mr-feedback
+/plugin update ant
 ```
 
 ## Contributing
 
-Want to add your skill?
-
 1. Create a folder in `skills/your-skill-name/` with a `SKILL.md` file
-2. Add your plugin to `.claude-plugin/marketplace.json`
-3. Open a PR
+2. Open a PR

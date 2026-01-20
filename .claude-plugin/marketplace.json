@@ -1,32 +1,18 @@
 {
-  "name": "lematodefuk-marketplace",
+  "name": "ant-marketplace",
   "owner": {
     "name": "LeMatosDeFuk",
     "email": ""
   },
   "metadata": {
-    "description": "Claude Code skills for document processing and productivity",
-    "version": "2.1.0"
+    "description": "Ant Studio skills for Claude Code",
+    "version": "3.0.0"
   },
   "plugins": [
     {
-      "name": "google-docs",
-      "source": "./skills/google-docs",
-      "description": "Read and extract content from Google Docs including text and images. Supports section extraction with image analysis.",
-      "version": "1.0.0",
-      "strict": true
-    },
-    {
-      "name": "asana-task-analyzer",
-      "source": "./skills/asana-task-analyzer",
-      "description": "Analyze Asana tasks for implementers. Extracts requirements, flags unclear items, provides actionable steps. Requires Asana MCP.",
-      "version": "1.0.0",
-      "strict": true
-    },
-    {
-      "name": "handle-mr-feedback",
-      "source": "./skills/handle-mr-feedback",
-      "description": "Analyze GitLab MR review comments, validate against code with subagents, let user select items, and create implementation plan. Requires glab CLI.",
+      "name": "ant",
+      "source": "./",
+      "description": "Ant Studio skills: Google Docs integration, Asana task analysis, MR feedback handling",
       "version": "1.0.0",
       "strict": true
     }
