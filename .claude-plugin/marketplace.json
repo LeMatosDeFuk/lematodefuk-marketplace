@@ -6,13 +6,27 @@
   },
   "metadata": {
     "description": "Ant Studio skills for Claude Code",
-    "version": "3.0.0"
+    "version": "3.1.0"
   },
   "plugins": [
     {
-      "name": "ant",
-      "source": "./",
-      "description": "Ant Studio skills: Google Docs integration, Asana task analysis, MR feedback handling",
+      "name": "ant:google-docs",
+      "source": "./skills/google-docs",
+      "description": "Read and extract content from Google Docs including text and images",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "ant:asana-task-analyzer",
+      "source": "./skills/asana-task-analyzer",
+      "description": "Analyze Asana tasks for implementers - extracts requirements, flags unclear items",
+      "version": "1.0.0",
+      "strict": true
+    },
+    {
+      "name": "ant:handle-mr-feedback",
+      "source": "./skills/handle-mr-feedback",
+      "description": "Handle GitLab MR review feedback - analyze, select, plan implementation",
       "version": "1.0.0",
       "strict": true
     }
