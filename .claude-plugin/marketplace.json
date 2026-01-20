@@ -11,30 +11,21 @@
   "plugins": [
     {
       "name": "google-docs",
-      "source": {
-        "source": "local",
-        "path": "skills/google-docs"
-      },
+      "source": "./skills/google-docs",
       "description": "Read and extract content from Google Docs including text and images. Supports section extraction with image analysis.",
       "version": "1.0.0",
       "strict": true
     },
     {
       "name": "asana-task-analyzer",
-      "source": {
-        "source": "local",
-        "path": "skills/asana-task-analyzer"
-      },
+      "source": "./skills/asana-task-analyzer",
       "description": "Analyze Asana tasks for implementers. Extracts requirements, flags unclear items, provides actionable steps. Requires Asana MCP.",
       "version": "1.0.0",
       "strict": true
     },
     {
       "name": "handle-mr-feedback",
-      "source": {
-        "source": "local",
-        "path": "skills/handle-mr-feedback"
-      },
+      "source": "./skills/handle-mr-feedback",
       "description": "Analyze GitLab MR review comments, validate against code with subagents, let user select items, and create implementation plan. Requires glab CLI.",
       "version": "1.0.0",
       "strict": true
