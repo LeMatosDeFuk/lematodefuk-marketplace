@@ -34,7 +34,20 @@ To see your installed marketplaces and skills:
 /marketplace list
 ```
 
-Or in the UI: `/marketplace add` → press **Tab** to switch to **"Marketplaces"** or **"Installed"** tab.
+### Using the UI
+
+When you run `/marketplace add`, you'll see a UI with multiple tabs:
+
+| Tab | Description |
+|-----|-------------|
+| **Plugins** | Individual plugins from all sources |
+| **Discover** | Browse plugins from *other* marketplaces (your own marketplace won't appear here) |
+| **Installed** | Your currently installed plugins |
+| **Marketplaces** | Your added marketplaces including this one |
+
+**Note:** After adding this marketplace, your skills won't appear in "Discover" - that's for discovering *new* marketplaces. Switch to **"Marketplaces"** or **"Installed"** tab to see your skills.
+
+Navigate between tabs using **Tab** key or **arrow keys**.
 
 ## Update Skills
 
