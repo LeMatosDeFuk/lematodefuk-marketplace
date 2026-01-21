@@ -9,7 +9,7 @@
 1. Run `/marketplace add` in Claude Code
 2. Press **Tab** to switch to **"Marketplaces"** tab
 3. Select **"+ Add Marketplace"**
-4. Enter: `LeMatosDeFuk/ant-marketplace`
+4. Enter: `antstudiocz/ant-marketplace`
 5. Press Enter to add marketplace
 6. Install the plugin: `/plugin install ant@ant-marketplace`
 

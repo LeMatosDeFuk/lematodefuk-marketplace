@@ -3,9 +3,10 @@
   "description": "(ant) skills for Claude Code - Google Docs, Asana tasks, GitLab MR feedback",
   "version": "2.0.0",
   "author": {
-    "name": "LeMatosDeFuk"
+    "name": "(ant)",
+    "description": "full-service digitální agentura"
   },
   "homepage": "https://antstudio.cz",
-  "repository": "https://github.com/LeMatosDeFuk/ant-marketplace",
+  "repository": "https://github.com/antstudiocz/ant-marketplace",
   "license": "MIT"
 }
