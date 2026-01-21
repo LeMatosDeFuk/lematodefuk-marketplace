@@ -72,18 +72,20 @@ Commands are optional aliases that reference skills. The skill itself is what ma
 - **Patch (X.Y.Z)** - Bug fixes, improvements
 
 **Release process:**
-```bash
-# 1. Update both version files
-# 2. Commit changes
-git add -A && git commit -m "feat/fix: description"
 
-# 3. Push
-git push origin master
+1. **Update BOTH version files to the same version:**
+   - `.claude-plugin/plugin.json` → change `"version": "X.Y.Z"`
+   - `.claude-plugin/marketplace.json` → change `"version": "X.Y.Z"` (in metadata section)
 
-# 4. Create GitHub release
-gh release create vX.Y.Z --title "vX.Y.Z" --notes "## Changes
-- Description of changes"
-```
+   ⚠️ **CRITICAL: Both versions MUST match, otherwise plugin won't work correctly!**
+
+2. **Commit, push and create release:**
+   ```bash
+   git add -A && git commit -m "feat/fix: description"
+   git push origin master
+   gh release create vX.Y.Z --title "vX.Y.Z" --notes "## Changes
+   - Description of changes"
+   ```
 
 **Users update with:**
 ```
