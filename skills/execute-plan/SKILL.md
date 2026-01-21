@@ -40,6 +40,16 @@ If user selects "Custom batch size", ask follow-up using AskUserQuestion tool:
   - "5 steps"
   - "10 steps"
 
+## Step 2.5: Get Execution Strategy
+
+Ask the user using AskUserQuestion tool:
+- Question: "Which execution strategy do you want to use?"
+- Header: "Strategy"
+- Options:
+  - "Fast (Recommended)" - Parallel execution without reviews. Quick but less safe.
+  - "With reviews" - Each task gets spec compliance + code quality review. Slower but catches issues early.
+  - "Hybrid" - Parallel execution, then one combined review at the end of each batch.
+
 ## Step 3: Load Plan
 
 If the plan location is a Google Docs URL:
@@ -54,6 +64,36 @@ If the plan location is a local file:
 Invoke the `superpowers:executing-plans` skill with this context:
 
 **Execution mode:** [the mode from Step 2]
-**Instruction:** Use systematically parallel subagents (Task tool with appropriate subagent_type) for independent tasks within each batch.
 
-Follow the executing-plans skill exactly as presented to you.
+**Model selection for subagents:** For each Task tool call, choose the `model` parameter based on step complexity:
+
+| Model | When to use |
+|-------|-------------|
+| `haiku` | Step is clearly defined with explicit file paths, code snippets, or mechanical changes. E.g., "Create file X with content Y", "Add import Z", simple CRUD. **Default for well-specified steps.** |
+| `sonnet` | Step requires moderate reasoning or decision-making. E.g., "Implement function that does X" without exact code, refactoring, component integration. |
+| `opus` | Step requires complex architectural decisions, creative problem-solving, or has ambiguous requirements. Use sparingly. |
+
+Detailed plans from `superpowers:write-plan` typically work well with `haiku` for most steps.
+
+---
+
+### Execution Strategy Instructions
+
+**If "Fast" strategy:**
+
+Use `superpowers:dispatching-parallel-agents` skill for parallel execution of independent tasks within each batch. No review steps.
+
+**If "With reviews" strategy:**
+
+Use `superpowers:subagent-driven-development` skill. This executes tasks sequentially with two mandatory review stages per task:
+1. Implementer → Spec reviewer (loop until approved) → Code quality reviewer (loop until approved)
+
+**If "Hybrid" strategy:**
+
+1. Use `superpowers:dispatching-parallel-agents` to execute all tasks in the batch in parallel
+2. After batch completes, dispatch one combined reviewer subagent to check spec compliance and code quality for all tasks
+3. Fix any issues before proceeding to next batch
+
+---
+
+Follow the `superpowers:executing-plans` skill for the overall flow (batching, checkpoints, completion).
