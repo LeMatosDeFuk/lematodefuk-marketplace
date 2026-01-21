@@ -17,12 +17,9 @@ Parse the user's command for a URL or file path argument. Examples:
 - `/ant:execute-plan /path/to/plan.md` → use that file path
 - `/ant:execute-plan` (no argument) → ask the user
 
-If no argument was provided, ask the user using AskUserQuestion tool:
-- Question: "What is the URL or file path of the plan you want to execute?"
-- Header: "Plan URL"
-- Options:
-  - "I'll paste it now" - User will provide URL/path
-  - "It's in my clipboard" - Ask user to paste it
+If no argument was provided, simply ask: "Paste the plan URL or file path:"
+
+Wait for the user's response with the URL/path.
 
 ## Step 2: Get Execution Mode
 
