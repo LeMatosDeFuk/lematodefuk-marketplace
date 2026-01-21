@@ -20,6 +20,7 @@
 | `/ant:google-docs` | Read and extract content from Google Docs |
 | `/ant:asana-task-analyzer` | Analyze Asana tasks for implementers |
 | `/ant:handle-mr-feedback` | Handle GitLab MR review feedback |
+| `/ant:execute-plan` | Execute implementation plan using parallel subagents |
 
 ## Update
 
