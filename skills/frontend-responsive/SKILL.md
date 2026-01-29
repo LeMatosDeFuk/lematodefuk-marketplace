@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: frontend-responsive
 description: Use when implementing responsive layouts, breakpoints, or device-specific rendering
 ---

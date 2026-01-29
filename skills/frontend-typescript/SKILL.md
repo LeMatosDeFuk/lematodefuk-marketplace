@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: frontend-typescript
 description: Use when defining types, interfaces, props, or handling null/undefined values
 ---

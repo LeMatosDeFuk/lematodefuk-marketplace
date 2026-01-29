@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: frontend-performance
 description: Use when optimizing components, images, data fetching, or adding loading states and skeletons
 ---

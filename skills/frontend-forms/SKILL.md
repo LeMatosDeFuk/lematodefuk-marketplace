@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: frontend-forms
 description: Use when working with forms - covers react-hook-form with composed field components (label + input + error handling)
 ---

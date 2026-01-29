@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: frontend-semantic-html
 description: Use when creating or modifying JSX structure - guides proper use of section, article, nav, header, footer, aside, main elements
 ---

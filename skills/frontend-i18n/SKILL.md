@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: frontend-i18n
 description: Use when adding any user-facing text, labels, aria-labels, or error messages - ALL text must be translated
 ---

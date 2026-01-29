@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: frontend-accessibility
 description: Use when adding interactive elements, forms, images, or any user-facing content - ensures a11y compliance
 ---

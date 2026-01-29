@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: frontend-components
 description: Use when creating, extracting, or refactoring React components - covers DRY, naming, structure
 ---
