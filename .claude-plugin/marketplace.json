@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "(ant) skills for Claude Code",
-    "version": "6.5.0"
+    "version": "6.6.0"
   },
   "plugins": [
     {
@@ -18,7 +18,15 @@
         "./skills/google-docs",
         "./skills/asana-task-analyzer",
         "./skills/handle-mr-feedback",
-        "./skills/execute-plan"
+        "./skills/execute-plan",
+        "./skills/frontend-accessibility",
+        "./skills/frontend-components",
+        "./skills/frontend-forms",
+        "./skills/frontend-i18n",
+        "./skills/frontend-performance",
+        "./skills/frontend-responsive",
+        "./skills/frontend-semantic-html",
+        "./skills/frontend-typescript"
       ]
     }
   ]
