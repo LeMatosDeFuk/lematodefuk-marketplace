@@ -6,12 +6,12 @@
   },
   "metadata": {
     "description": "(ant) skills for Claude Code",
-    "version": "6.7.1"
+    "version": "7.1.0"
   },
   "plugins": [
     {
       "name": "ant",
-      "description": "(ant) skills - Google Docs, Asana tasks, GitLab MR feedback, execute plans",
+      "description": "(ant) skills - Google Docs, Asana tasks, GitLab MR feedback, execute plans, frontend, Laravel caching, Laravel performance, Laravel architecture",
       "source": "./",
       "strict": true,
       "skills": [
@@ -27,7 +27,10 @@
         "./skills/frontend-responsive",
         "./skills/frontend-semantic-html",
         "./skills/frontend-typescript",
-        "./skills/frontend-code-separation"
+        "./skills/frontend-code-separation",
+        "./skills/laravel-caching",
+        "./skills/laravel-performance",
+        "./skills/laravel-architecture"
       ]
     }
   ]
