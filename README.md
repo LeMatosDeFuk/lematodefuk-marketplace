@@ -19,6 +19,14 @@
 | `/ant:asana-task-analyzer` | Analyze Asana tasks for implementers |
 | `/ant:handle-mr-feedback` | Handle GitLab MR review feedback |
 | `/ant:execute-plan` | Execute implementation plan using parallel subagents |
+| `/ant:frontend-accessibility` | Ensure a11y compliance for interactive elements |
+| `/ant:frontend-components` | Guide DRY, naming, and structure for React components |
+| `/ant:frontend-forms` | React-hook-form with composed field components |
+| `/ant:frontend-i18n` | Ensure all user-facing text is translated |
+| `/ant:frontend-performance` | Optimize components, images, and loading states |
+| `/ant:frontend-responsive` | Implement responsive layouts and breakpoints |
+| `/ant:frontend-semantic-html` | Guide proper use of semantic HTML elements |
+| `/ant:frontend-typescript` | Define types, interfaces, and handle null values |
 
 ## Update
 
