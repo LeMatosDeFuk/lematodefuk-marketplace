@@ -6,12 +6,10 @@
 
 ## Installation
 
-1. Run `/marketplace add` in Claude Code
-2. Press **Tab** to switch to **"Marketplaces"** tab
-3. Select **"+ Add Marketplace"**
-4. Enter: `antstudiocz/ant-marketplace`
-5. Press Enter to add marketplace
-6. Install the plugin: `/plugin install ant@ant-marketplace`
+```
+/plugin marketplace add antstudiocz/ant-marketplace
+/plugin install ant@ant-marketplace
+```
 
 ## Available Skills
 
